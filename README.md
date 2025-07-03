@@ -289,3 +289,31 @@ int main()
 }
 
 ### Program 14: WRITE A C PROGRAM TO FIND MAXIMUM BETWEEN TWO NUMBERS USING SWITCH CASE?
+
+'''C
+
+#include <stdio.h>
+int main()
+{
+    int num1,num2;
+    printf("Enter 2 numbers: ");
+    scanf("%d %d",&num1,&num2);
+    switch(num1>num2){
+        case 1:
+        printf("%d is maximum",num1);
+        break;
+        case 0:
+        if(num2>num1){
+            printf("%d is maximum number",num2);
+        }
+        else
+        printf("Both are equal");
+        break;
+        default:
+        printf("Enter appropriate number");
+    }
+}
+
+### Program 15: WRITE A C PROGRAM TO PRINT EVEN NUMBERS BETWEEN 1 TO 20 USING A FOR LOOP?
+
+'''C
