@@ -3,7 +3,6 @@
 ## 1. Control Statements
 
 ### Program 1: 1.WRITE A C PROGRAM TO ACCEPT TWO INTEGERS AND CHECK WHETHER THEY ARE EQUAL OR NOT ?
-
 '''C
 #include<stdio.h>
 int main(){
