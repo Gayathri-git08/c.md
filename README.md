@@ -3,7 +3,7 @@ c
 
 ## 1. Control Statements
 
-### Program 1: 1.WRITE A C PROGRAM TO ACCEPT TWO INTEGERS AND CHECK WHETHER THEY ARE EQUAL OR NOT ?
+### Program 1: WRITE A C PROGRAM TO ACCEPT TWO INTEGERS AND CHECK WHETHER THEY ARE EQUAL OR NOT ?
 
 ```c
 #include<stdio.h>
@@ -38,7 +38,7 @@ int main(){
 ```
 ### Program 3: .WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS POSITIVE OR NEGATIVE?
 
-'''C
+```c
 #include<stdio.h>
 int main(){
     int n;
