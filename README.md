@@ -435,7 +435,7 @@ int main()
 ```
 ### Program 21: WRITE A C PROGRAM TO REVERSE A GIVEN NUMBER USING A WHILE LOOP?
 
-```
+```p
 #include <stdio.h>
 int main()
 {
