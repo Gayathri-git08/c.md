@@ -1,9 +1,11 @@
+c
 # C Programming Practice Programs
 
 ## 1. Control Statements
 
 ### Program 1: 1.WRITE A C PROGRAM TO ACCEPT TWO INTEGERS AND CHECK WHETHER THEY ARE EQUAL OR NOT ?
-'''C
+
+```c
 #include<stdio.h>
 int main(){
     int a,b;
@@ -16,10 +18,11 @@ int main(){
         printf("%d %d are not equal",a,b);
     } 
 }
+```
 
 ### Program 2: WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS EVEN OR ODD?
 
-'''C
+```c
 #include<stdio.h>
 int main(){
     int n;
@@ -32,7 +35,7 @@ int main(){
         printf("%d is not a odd number",n);
     }  
 }
-
+```
 ### Program 3: .WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS POSITIVE OR NEGATIVE?
 
 '''C
@@ -51,10 +54,10 @@ int main(){
         printf("%d is a Nuetral number",n);
     }
 }
-
+```
 ### Program 4: WRITE A C PROGRAM TO FIND WHETHER A GIVEN YEAR IS A LEAP YEAR OR NOT?
 
-'''C
+```c
 #include <stdio.h>
 
 int main()
@@ -70,10 +73,10 @@ int main()
     else
     printf("Given %d is not an leap year",n);
 }
-
+```
 ### Program 5: WRITE A C PROGRAM TO READ THE AGE OF A CANDIDATE AND DETERMINE WHETHER HE IS ELIGIBLE TO CAST HIS/HER OWN VOTE?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -86,10 +89,10 @@ int main()
     else
     printf("%d years of age is not eligible to her/his vote",age);
 }
-
+```
 ### Program 6: WRITE A C PROGRAM TO READ THE VALUE OF AN INTEGER M AND DISPLAY THE VALUE OF N IS 1 WHEN M IS LARGER THAN 0, 0 WHEN M IS 0 AND -1 WHEN M IS LESS THAN 0.
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -109,10 +112,10 @@ int main()
         printf("The value of n is: %d",n);
     }
 }
-
+```
 ### Program 7:WRITE A C PROGRAM TO FIND THE LARGEST OF THREE NUMBERS?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -133,10 +136,10 @@ int main()
         printf("%d is the largest number",c);
     }
 }
-
+```
 ### Program 8:.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS A VOWEL OR CONSONANT?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -150,10 +153,10 @@ int main()
         printf("Given chracter %c is an Consonant",ch);
     }
 }
-
+```
 ### Program 9:.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS AN ALPHABET OR NOT?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -167,10 +170,10 @@ int main()
         printf("Given chracter %c is not an Alphabet",ch);
     }
 }
-
+```
 ### Program 10: WRITE A C PROGRAM TO FIND MINIMUM OR MAXIMUM BETWEEN TWO NUMBERS?
 
-'''C
+```c
 #include <stdio.h>
 
 int main()
@@ -187,10 +190,10 @@ int main()
         printf("%d is the minimum number",num1);
     }
 }
-
+```
 ### Program 11: WRITE A C PROGRAM TO ENTER WEEK NUMBER AND PRINT DAY OF WEEK?
 
-'''C
+```c
 
 #include <stdio.h>
 int main()
@@ -224,10 +227,10 @@ int main()
         printf("Invalid Week number!!!");
     }
 }
-
+```
 ### Program 12: WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS UPPERCASE OR LOWERCASE?
 
-'''C
+```c
 
 #include <stdio.h>
 int main()
@@ -244,10 +247,10 @@ int main()
     else
     printf("Not an Character");
 }
-
+```
 ### Program 13: WRITE A C PROGRAM TO FIND NUMBER OF DAYS IN MONTH?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -286,10 +289,10 @@ int main()
         }
     }  
 }
-
+```
 ### Program 14: WRITE A C PROGRAM TO FIND MAXIMUM BETWEEN TWO NUMBERS USING SWITCH CASE?
 
-'''C
+```c
 
 #include <stdio.h>
 int main()
@@ -312,10 +315,10 @@ int main()
         printf("Enter appropriate number");
     }
 }
-
+```
 ### Program 15: WRITE A C PROGRAM TO PRINT EVEN NUMBERS BETWEEN 1 TO 20 USING A FOR LOOP?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -326,10 +329,10 @@ int main()
         }
     }
 }
-
+```
 ### Program 16: WRITE A C PROGRAM TO CALCULATE THE SUM OF NUMBERS FROM 1 TO 100 USING A WHILE LOOP?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -341,10 +344,10 @@ int main()
     }
     printf("Sum of numbers from 1 to 100 are: %d",sum);
 }
-
+```
 ### Program 17: WRITE A C PROGRAM TO FIND THE FACTORIAL OF A GIVEN NUMBER USING A FOR LOOP?
 
-'''C
+```c
 
 #include <stdio.h>
 int main()
@@ -357,10 +360,10 @@ int main()
     }
     printf("Factorial is: %d",fact);
 }
-
+```
 ### Program 18: WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS PRIME OR NOT USING A WHILE LOOP?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -386,10 +389,10 @@ int main()
        printf("%d is not a prime",n);
    }
 }
-
+```
 ### Program 19: WRITE A C PROGRAM TO FIND THE SUM OF DIGITS OF A NUMBER USING A WHILE LOOP?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -403,10 +406,10 @@ int main()
     }
     printf("Sum of the didgits are: %d",sum);
 }
-
+```
 ### Program 20: WRITE A C PROGRAM TO PRINT FIBONACCI SERIES UP TO N TERMS USING A FOR LOOP?
 
-'''C
+```c
 #include <stdio.h>
 int main()
 {
@@ -429,10 +432,10 @@ int main()
             b=next;
     }
 }
-
+```
 ### Program 21: WRITE A C PROGRAM TO REVERSE A GIVEN NUMBER USING A WHILE LOOP?
 
-'''C
+```
 #include <stdio.h>
 int main()
 {
@@ -446,5 +449,5 @@ int main()
     }
     printf("Reversed numeber is: %d",reverse);
 }
-
+```
 ### Program 22: WRITE A C PROGRAM TO FIND THE LARGEST ELEMENT IN AN ARRAY USING A FOR LOOP?
