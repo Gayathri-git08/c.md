@@ -317,3 +317,135 @@ int main()
 ### Program 15: WRITE A C PROGRAM TO PRINT EVEN NUMBERS BETWEEN 1 TO 20 USING A FOR LOOP?
 
 '''C
+#include <stdio.h>
+int main()
+{
+    printf("Even numbers between 1 to 20 are: ");
+    for(int i=1;i<=20;i++){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+    }
+}
+
+### Program 16: WRITE A C PROGRAM TO CALCULATE THE SUM OF NUMBERS FROM 1 TO 100 USING A WHILE LOOP?
+
+'''C
+#include <stdio.h>
+int main()
+{
+    int i=1;
+    int sum=0;
+    while(i<=100){
+        sum+=i;
+        i++;
+    }
+    printf("Sum of numbers from 1 to 100 are: %d",sum);
+}
+
+### Program 17: WRITE A C PROGRAM TO FIND THE FACTORIAL OF A GIVEN NUMBER USING A FOR LOOP?
+
+'''C
+
+#include <stdio.h>
+int main()
+{
+    int n,i,fact=1;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        fact*=i;
+    }
+    printf("Factorial is: %d",fact);
+}
+
+### Program 18: WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS PRIME OR NOT USING A WHILE LOOP?
+
+'''C
+#include <stdio.h>
+int main()
+{
+   int i=2,n,is_prime=1;
+   printf("Enter a number: ");
+   scanf("%d",&n);
+   if(n<=1){
+       is_prime=0;
+   }
+   else{
+       while(i<=n/2){
+           if(n%i==0){
+               is_prime=0;
+               break;
+           }
+           i++;
+       }
+   }
+   if(is_prime==1){
+       printf("%d is a prime",n);
+   }
+   else{
+       printf("%d is not a prime",n);
+   }
+}
+
+### Program 19: WRITE A C PROGRAM TO FIND THE SUM OF DIGITS OF A NUMBER USING A WHILE LOOP?
+
+'''C
+#include <stdio.h>
+int main()
+{
+    int n,sum=0,digit;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    while(n!=0){
+        digit=n%10;
+        sum+=digit;
+        n/=10;
+    }
+    printf("Sum of the didgits are: %d",sum);
+}
+
+### Program 20: WRITE A C PROGRAM TO PRINT FIBONACCI SERIES UP TO N TERMS USING A FOR LOOP?
+
+'''C
+#include <stdio.h>
+int main()
+{
+    int i,n,a=0,b=1,next;
+    printf("Enter no.of terms to print fibonacci series: ");
+    scanf("%d",&n);
+    if(n==0){
+        printf("not valid for zero");
+    }
+    if(n>=1){
+        printf("%d ",a);
+    }
+    if(n>=2){
+        printf("%d ",b);
+    }
+    for(i=2;i<n;i++){
+            next=a+b;
+            printf("%d ",next);
+            a=b;
+            b=next;
+    }
+}
+
+### Program 21: WRITE A C PROGRAM TO REVERSE A GIVEN NUMBER USING A WHILE LOOP?
+
+'''C
+#include <stdio.h>
+int main()
+{
+    int n,rem,reverse=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    while(n!=0){
+        rem=n%10;
+        reverse=reverse*10+rem;
+        n/=10;
+    }
+    printf("Reversed numeber is: %d",reverse);
+}
+
+### Program 22: WRITE A C PROGRAM TO FIND THE LARGEST ELEMENT IN AN ARRAY USING A FOR LOOP?
