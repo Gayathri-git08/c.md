@@ -435,7 +435,7 @@ int main()
 ```
 ### Program 21: WRITE A C PROGRAM TO REVERSE A GIVEN NUMBER USING A WHILE LOOP?
 
-```p
+```c
 #include <stdio.h>
 int main()
 {
@@ -451,3 +451,78 @@ int main()
 }
 ```
 ### Program 22: WRITE A C PROGRAM TO FIND THE LARGEST ELEMENT IN AN ARRAY USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+int main()
+{
+    int i,n,arr[50],largest;
+    printf("Enter the size of array: ");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    largest=arr[0];
+    for(i=1;i<n;i++){
+        if(arr[i]>largest){
+            printf("%d",largest);
+        }
+    }
+}
+```
+### Program 23:WRITE A C PROGRAM TO FIND THE SMALLEST ELEMENT IN AN ARRAY USING A WHILE LOOP?
+
+```c
+#include <stdio.h>
+int main(){
+    int i,n,arr[50],smallest;
+    printf("Enter the size of the array: ");
+    scanf("%d",&n);
+    printf("Enter the %d elements: ",n);
+    for(i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    smallest=arr[0];
+    for(i=1;i<n;i++){
+        if(arr[i]<smallest){
+            smallest=arr[i];
+        }
+    }
+    printf("smallest array element in the given array is: %d",smallest);
+}
+```
+### Program 24: WRITE A C PROGRAM TO PRINT ALL THE ELEMENTS OF AN ARRAY USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+int main(){
+    int i,n,arr[50];
+    printf("Enter the size of the array: ");
+    scanf("%d",&n);
+    printf("Enter the %d elements: ",n);
+    for(i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    printf("Array elements are: ");
+    for(i=0;i<n;i++)
+    printf("%d ",arr[i]);
+}
+```
+### Program 25: WRITE A C PROGRAM TO FIND THE SUM OF ELEMENTS IN AN ARRAY USING A WHILE LOOP?
+
+```c
+#include <stdio.h>
+int main()
+{
+    int i,n,arr[50],sum=0;
+    printf("Enter the size of the array: ");
+    scanf("%d",&n);
+    printf("Enter %d array elements: ",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    printf("The sum of the given array elements are: %d",sum);
+}
+```
+### Program 26: WRITE A C PROGRAM TO COUNT THE NUMBER OF WORDS IN A GIVEN STRING USING A WHILE LOOP?
