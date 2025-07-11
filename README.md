@@ -194,7 +194,6 @@ int main()
 ### Program 11: WRITE A C PROGRAM TO ENTER WEEK NUMBER AND PRINT DAY OF WEEK?
 
 ```c
-
 #include <stdio.h>
 int main()
 {
@@ -231,7 +230,6 @@ int main()
 ### Program 12: WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS UPPERCASE OR LOWERCASE?
 
 ```c
-
 #include <stdio.h>
 int main()
 {
@@ -293,7 +291,6 @@ int main()
 ### Program 14: WRITE A C PROGRAM TO FIND MAXIMUM BETWEEN TWO NUMBERS USING SWITCH CASE?
 
 ```c
-
 #include <stdio.h>
 int main()
 {
@@ -348,7 +345,6 @@ int main()
 ### Program 17: WRITE A C PROGRAM TO FIND THE FACTORIAL OF A GIVEN NUMBER USING A FOR LOOP?
 
 ```c
-
 #include <stdio.h>
 int main()
 {
@@ -525,4 +521,81 @@ int main()
     printf("The sum of the given array elements are: %d",sum);
 }
 ```
-### Program 26: WRITE A C PROGRAM TO COUNT THE NUMBER OF WORDS IN A GIVEN STRING USING A WHILE LOOP?
+### Program 26: WRITE A C PROGRAM TO COUNT THE NUMBER OF VOWELS IN A GIVEN STRING USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int i,count=0;
+    char str[100];
+    printf("Enter a string: ");
+    fgets(str,sizeof(str),stdin);
+    for(i=0;str[i];i++){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U'){
+            count++;
+        }
+    }
+    printf("No.Of Vowels in the given string: %d",count);
+}
+```
+### Program 27: WRITE A C PROGRAM TO COUNT THE NUMBER OF WORDS IN A GIVEN STRING USING A WHILE LOOP?
+
+```c
+#include <stdio.h>
+int main()
+{
+    char str[100];
+    int i=0,count=0,word=0;;
+    printf("Enter a string: ");
+    fgets(str,sizeof(str),stdin);
+    if(str[0]=='\0' || (str[0]== ' ' && str[1]== '\0')){
+        printf("Total words: 0\n");
+        return 0;
+    }
+    while(str[i]!=0){
+        if(str[i]=='\0' || str[i]=='\t' || str[i]=='\n'){
+            word=0;
+        }
+        else{
+            count++;
+            word=1;
+        }
+        i++;
+    }
+    printf("total words are: %d",count);
+}
+```
+### Program 28: WRITE A C PROGRAM TO CHECK WHETHER A GIVEN STRING IS A PALINDROME OR NOT USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int i,length,flag=0;
+    char str[100];
+    printf("Enter a string: ");
+    fgets(str,sizeof(str),stdin);
+    length = strlen(str);
+    if(str[length-1]=='\n'){
+        str[length-1]= '\0';
+        length--;
+    }
+    for(i=0;i<length/2;i++){
+        if(str[i]!=str[length-1-i]){
+            flag=1;
+            break;
+        }
+    }
+    if(flag==0){
+        printf("given string is a palindrome");
+    }
+    else
+    printf("given string is not a palindrome");
+}
+```
+### Program 29: WRITE A C PROGRAM TO CONCATENATE TWO STRINGS WITHOUT USING LIBRARY FUNCTIONS USING A WHILE LOOP?
+
+```c
