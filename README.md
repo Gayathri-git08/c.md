@@ -599,3 +599,92 @@ int main()
 ### Program 29: WRITE A C PROGRAM TO CONCATENATE TWO STRINGS WITHOUT USING LIBRARY FUNCTIONS USING A WHILE LOOP?
 
 ```c
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str1[100]; 
+    char str2[50]; 
+
+    printf("Enter the first string: ");
+    fgets(str1, sizeof(str1), stdin);
+
+    printf("Enter the second string: ");
+    fgets(str2, sizeof(str2), stdin);
+    int i = 0;
+    while(str1[i]!='\0' && str1[i]!='\n') {
+        i++;
+    }
+    str1[i]='\0'; 
+    i = 0;
+    while (str2[i]!='\0' && str2[i]!='\n') {
+        i++;
+    }
+    str2[i]='\0'; 
+    int len1=0;
+    while (str1[len1]!='\0') {
+        len1++;
+    }
+    int j = 0;
+    while (str2[j]!='\0') {
+        str1[len1+j] = str2[j];
+        j++;
+    }
+    str1[len1+j]='\0';
+    printf("Concatenated string: %s\n", str1);
+}
+```
+### Program 30: WRITE A C PROGRAM TO FIND THE LENGTH OF A STRING USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int i,count=0;
+    char str[100];
+    printf("Enter a string:");
+    fgets(str,sizeof(str),stdin);
+    for(i=0;str[i]!='\n';i++){
+        count++;
+    }
+    printf("Length is:%d",count);
+}
+```
+### Program 31: WRITE A C PROGRAM TO CONVERT A STRING TO UPPERCASE USING A WHILE LOOP?
+
+```c
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    int i;
+    char str[100];
+    printf("Enter a string: ");
+    fgets(str,sizeof(str),stdin);
+    while(str[i]!=0){
+        if(str[i]>=97 && str[i]<=122){
+             str[i]=str[i]-32;
+        }
+        i++;
+    }
+    printf("Uppercase string is: %s",str);
+}
+```
+### Program 32: WRITE A C PROGRAM TO FIND THE POWER OF A NUMBER USING A FOR LOOP?
+
+```c
+#include <stdio.h>
+int main()
+{
+    int i,base,exponent,result=1;
+    printf("Enter base: ");
+    scanf("%d",&base);
+    printf("Enter exponent: ");
+    scanf("%d",&exponent);
+    for(i=1;i<=exponent;i++){
+        result*=base;
+    }
+    printf("%d power %d is: %d",base,exponent,result);
+}
+```
+### Program 33: WRITE A C PROGRAM TO FIND THE FACTORIAL OF A NUMBER USING A WHILE LOOP?
